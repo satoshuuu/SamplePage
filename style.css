@@ -1,0 +1,152 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0.9;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #D4D7DD;
+  height: 70px;
+}
+
+.menu .menu__mainItem, .menu .menu__subItem {
+  text-align: center;
+  width: 140px;
+  height: 70px;
+}
+
+.menu .menu__mainItem a, .menu .menu__subItem a {
+  display: inline-block;
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+  line-height: 70px;
+  position: relative;
+}
+
+.menu .menu__mainItem {
+  margin: 0 50% 0 5%;
+}
+
+.menu .menu__subItem {
+  margin: 0 10px;
+}
+
+.menu .menu__subItem a::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #420000;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transform-origin: right top;
+          transform-origin: right top;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.menu .menu__subItem a:hover::after {
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.content__wrapper .backgroundChange {
+  background-color: #e3e7f1;
+}
+
+.content__wrapper .contents {
+  text-align: center;
+  margin: 0 25%;
+  padding: 20vh 0;
+}
+
+.content__wrapper .contents.contents:first-child {
+  margin: 0 20% 50vh;
+}
+
+.content__wrapper .contents .content__title {
+  font-weight: normal;
+  margin: 30px;
+}
+
+.content__wrapper #content1 #profile_image {
+  width: 30%;
+  height: auto;
+  margin: 10px;
+}
+
+.content__wrapper #content1 .name {
+  margin: 20px;
+}
+
+.content__wrapper #content1 .name h2 {
+  font-weight: normal;
+}
+
+.content__wrapper #content1 .name p {
+  opacity: 0.5;
+}
+
+.content__wrapper #content1 .td1 {
+  background-color: #465881;
+  width: 150px;
+  height: 50px;
+  color: white;
+}
+
+.content__wrapper #content1 .td2 {
+  background-color: #e3e7f1;
+  width: 500px;
+}
+
+.content__wrapper #content1 table {
+  margin: 30px auto;
+}
+
+.content__wrapper #content2 .skillList {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.content__wrapper #content2 .skillList li {
+  width: 300px;
+  margin: 10px;
+  background-color: white;
+}
+
+.content__wrapper #content2 .skillList li h2 {
+  font-weight: normal;
+  margin: 10px;
+}
+
+.content__wrapper #content2 .skillList li i {
+  margin: 10px;
+}
+/*# sourceMappingURL=style.css.map */
