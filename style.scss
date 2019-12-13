@@ -57,10 +57,10 @@
     }
     .contents {
         text-align: center;
-        margin: 0 25%;
+        margin: 0 20%;
         padding: 20vh 0;
         &.contents:first-child{
-        margin: 0 20% 50vh;
+        margin: 0 20%;
         }
         .content__title{
             font-weight: normal;
@@ -102,15 +102,26 @@
             display: flex;
             flex-direction: row;
             li {
-                width: 300px;
+                width: 30%;
                 margin: 10px;
+                padding: 10px;
                 background-color: white;
+                box-shadow: 0 0 8px gray;
                 h2 {
                     font-weight: normal;
                     margin: 10px;
                 }
-                i {
-                    margin: 10px;
+                .skillText {
+                    padding: 5px;
+                    height: 5em;
+                    text-align: left;
+                    margin-top: 10px;
+                }
+                .skillStars {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    margin: 20px 0;
                 }
             }
         }
